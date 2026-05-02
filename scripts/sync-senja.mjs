@@ -1,8 +1,9 @@
 import { readFileSync, writeFileSync } from "node:fs";
+import knownTestimonials from "../config/known-testimonials.json" with { type: "json" };
 
 const API_BASE = "https://api.senja.io/v1";
 const API_KEY = process.env.SENJA_API_KEY || readLocalKey();
-const KNOWN_TESTIMONIALS = readKnownTestimonials();
+const KNOWN_TESTIMONIALS = knownTestimonials;
 
 const EXCLUDED_NAMES = new Set([
   "prathamesh joshi",
@@ -58,14 +59,6 @@ function readLocalKey() {
     return readFileSync("env.local", "utf8").trim();
   } catch {
     return "";
-  }
-}
-
-function readKnownTestimonials() {
-  try {
-    return JSON.parse(readFileSync("config/known-testimonials.json", "utf8"));
-  } catch {
-    return {};
   }
 }
 
@@ -200,19 +193,25 @@ function statsFor(reviews) {
   };
 }
 
-const all = await fetchAllTestimonials();
-const hydrated = [];
-for (const row of all) hydrated.push(await hydrateVideo(row));
+export async function buildPayload() {
+  const all = await fetchAllTestimonials();
+  const hydrated = [];
+  for (const row of all) hydrated.push(await hydrateVideo(row));
 
-const reviews = hydrated
-  .filter((row) => !isExcluded(row))
-  .map((row) => ({ raw: row, normalized: normalize(row) }))
-  .filter(({ raw, normalized }) => hasConfidentAiMlSignal(raw, normalized.course))
-  .filter(({ normalized }) => normalized.name !== "Anonymous learner" || normalized.text || normalized.videoUrl)
-  .map(({ normalized }) => normalized)
-  .sort((a, b) => new Date(b.date) - new Date(a.date));
+  const reviews = hydrated
+    .filter((row) => !isExcluded(row))
+    .map((row) => ({ raw: row, normalized: normalize(row) }))
+    .filter(({ raw, normalized }) => hasConfidentAiMlSignal(raw, normalized.course))
+    .filter(({ normalized }) => normalized.name !== "Anonymous learner" || normalized.text || normalized.videoUrl)
+    .map(({ normalized }) => normalized)
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
 
-const payload = { stats: statsFor(reviews), reviews };
-writeFileSync("reviews-data.js", `window.VIZUARA_REVIEW_DATA = ${JSON.stringify(payload, null, 2)};\n`, "utf8");
-console.log(`Synced ${reviews.length} public testimonials from Senja.`);
-console.log(payload.stats);
+  return { stats: statsFor(reviews), reviews };
+}
+
+if (import.meta.url === `file://${process.argv[1]}`) {
+  const payload = await buildPayload();
+  writeFileSync("reviews-data.js", `window.VIZUARA_REVIEW_DATA = ${JSON.stringify(payload, null, 2)};\n`, "utf8");
+  console.log(`Synced ${payload.reviews.length} public testimonials from Senja.`);
+  console.log(payload.stats);
+}

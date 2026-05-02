@@ -1,9 +1,9 @@
-const dataset = window.VIZUARA_REVIEW_DATA || { stats: {}, reviews: [] };
-const allReviews = dataset.reviews;
-const writtenReviews = allReviews.filter((review) => review.text || review.title);
-const videoReviews = allReviews.filter((review) => review.videoUrl);
+let dataset = window.VIZUARA_REVIEW_DATA || { stats: {}, reviews: [] };
+let allReviews = dataset.reviews;
+let writtenReviews = allReviews.filter((review) => review.text || review.title);
+let videoReviews = allReviews.filter((review) => review.videoUrl);
 
-const themes = [
+const themeDefinitions = [
   {
     label: "Research",
     terms: ["research", "paper", "publication", "researcher"],
@@ -44,12 +44,7 @@ const themes = [
     terms: ["robot", "robotics", "physical ai", "autonomy"],
     note: "Robot learning, SO-101 arms, Physical AI, autonomy, and field robotics appear in reviews.",
   },
-].map((theme) => ({
-  ...theme,
-  count: allReviews.filter((review) =>
-    theme.terms.some((term) => `${review.title} ${review.text} ${review.course}`.toLowerCase().includes(term)),
-  ).length,
-}));
+];
 
 const themeBoard = document.querySelector("#themeBoard");
 const reviewGrid = document.querySelector("#reviewGrid");
@@ -137,7 +132,31 @@ function updateStats() {
   document.querySelector("#videoReviews").textContent = stats.videoReviews ?? "";
 }
 
+function setDataset(nextDataset) {
+  dataset = nextDataset || { stats: {}, reviews: [] };
+  allReviews = dataset.reviews || [];
+  writtenReviews = allReviews.filter((review) => review.text || review.title);
+  videoReviews = allReviews.filter((review) => review.videoUrl);
+}
+
+async function loadLiveDataset() {
+  try {
+    const response = await fetch("/api/reviews", { cache: "no-store" });
+    if (!response.ok) return;
+    const liveDataset = await response.json();
+    if (Array.isArray(liveDataset.reviews)) setDataset(liveDataset);
+  } catch {
+    // Keep the generated reviews-data.js fallback for local previews or API errors.
+  }
+}
+
 function renderThemes() {
+  const themes = themeDefinitions.map((theme) => ({
+    ...theme,
+    count: allReviews.filter((review) =>
+      theme.terms.some((term) => `${review.title} ${review.text} ${review.course}`.toLowerCase().includes(term)),
+    ).length,
+  }));
   const max = Math.max(...themes.map((theme) => theme.count), 1);
   themeBoard.innerHTML = themes
     .map(
@@ -232,7 +251,12 @@ filterButtons.forEach((button) => {
   });
 });
 
-updateStats();
-renderThemes();
-renderVideoGallery();
-renderReviews();
+async function init() {
+  await loadLiveDataset();
+  updateStats();
+  renderThemes();
+  renderVideoGallery();
+  renderReviews();
+}
+
+init();
