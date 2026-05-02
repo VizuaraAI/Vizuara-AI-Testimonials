@@ -2,8 +2,6 @@ name: Sync Senja testimonials
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "17 */6 * * *"
 
 permissions:
   contents: write
@@ -19,11 +17,13 @@ jobs:
           node-version: "22"
 
       - name: Sync testimonials from Senja
+        if: ${{ secrets.SENJA_API_KEY != '' }}
         run: npm run sync:senja
         env:
           SENJA_API_KEY: ${{ secrets.SENJA_API_KEY }}
 
       - name: Commit updated testimonial data
+        if: ${{ secrets.SENJA_API_KEY != '' }}
         uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "Sync Senja testimonials"

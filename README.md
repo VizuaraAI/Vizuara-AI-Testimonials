@@ -9,15 +9,26 @@ https://vizuara-reviews.vercel.app
 ## Files
 
 - `index.html`, `styles.css`, `script.js` - static website
-- `reviews-data.js` - generated testimonial data consumed by the website
+- `api/reviews.js` - Vercel serverless endpoint that fetches live Senja data
+- `reviews-data.js` - generated fallback testimonial data consumed when the live API is unavailable
 - `scripts/sync-senja.mjs` - pulls testimonials from the Senja API, applies public-site filters, and regenerates `reviews-data.js`
-- `.github/workflows/sync-senja.yml` - scheduled sync every 6 hours plus Vercel deploy
+- `.github/workflows/sync-senja.yml` - optional manual sync for the fallback data file
 - `config/known-testimonials.json` - curated course labels for existing testimonials whose Senja text does not explicitly name the course
 
-## Required GitHub Secrets
+## Live Updates
 
-- `SENJA_API_KEY` - Senja API key
-- `VERCEL_TOKEN` - Vercel token with access to `rajatdandekars-projects/vizuara-reviews`
+Live updates are handled by Vercel through `/api/reviews`. The Vercel project must have this production environment variable:
+
+- `SENJA_API_KEY`
+
+The browser first fetches `/api/reviews`; if the API is unavailable, it falls back to the checked-in `reviews-data.js`.
+
+## Optional GitHub Secrets
+
+Only needed if manually running the GitHub fallback sync workflow:
+
+- `SENJA_API_KEY`
+- `VERCEL_TOKEN`
 
 ## Local Sync
 
