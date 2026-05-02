@@ -1,0 +1,12 @@
+{
+  "name": "vizuara-ai-testimonials",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:senja": "node scripts/sync-senja.mjs",
+    "check": "node --check script.js && node --check scripts/sync-senja.mjs"
+  },
+  "devDependencies": {}
+}
+

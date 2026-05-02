@@ -1,0 +1,42 @@
+name: Sync Senja testimonials
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Sync testimonials from Senja
+        run: npm run sync:senja
+        env:
+          SENJA_API_KEY: ${{ secrets.SENJA_API_KEY }}
+
+      - name: Commit updated testimonial data
+        uses: stefanzweifel/git-auto-commit-action@v6
+        with:
+          commit_message: "Sync Senja testimonials"
+          file_pattern: reviews-data.js
+
+      - name: Deploy to Vercel
+        run: |
+          if [ -z "$VERCEL_TOKEN" ]; then
+            echo "VERCEL_TOKEN is not configured; skipping deploy."
+            exit 0
+          fi
+          mkdir -p .vercel
+          printf '{"projectId":"prj_lbIulI40OCv67nq8GjndXPqU5foy","orgId":"team_UdVE5aDfPURzQOlSfnfd8m0I","projectName":"vizuara-reviews"}' > .vercel/project.json
+          npx vercel deploy --prod --yes --scope rajatdandekars-projects --token "$VERCEL_TOKEN"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}

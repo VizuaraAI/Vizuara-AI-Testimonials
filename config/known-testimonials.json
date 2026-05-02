@@ -1,0 +1,422 @@
+{
+  "4a0931d1-7f25-4295-87fb-024c11f928aa": {
+    "course": "VLA and World Models",
+    "include": true
+  },
+  "e842d524-b443-4791-a0c4-c302fd42c02d": {
+    "course": "VLA and World Models",
+    "include": true
+  },
+  "2bd28314-8923-4d56-bbd4-fa77a6703274": {
+    "course": "Modern Robot Learning Bootcamp",
+    "include": true
+  },
+  "8649dce4-0c2a-44c1-af80-dbc21cce19b3": {
+    "course": "VLA and World Models",
+    "include": true
+  },
+  "7c080150-7f7c-4cac-8676-e295706527d7": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "951d95eb-f710-450c-97c6-419433d0c697": {
+    "course": "Context Engineering for LLMs",
+    "include": true
+  },
+  "0ce66f2f-e8e6-49ba-9cb2-8879f64e2984": {
+    "course": "Context Engineering for LLMs",
+    "include": true
+  },
+  "1a1b3d89-1009-415b-bc0d-907ccdd91ad0": {
+    "course": "SciML Research Bootcamp",
+    "include": true
+  },
+  "f304dae6-74dc-4254-aed7-f8726a68b8c5": {
+    "course": "SciML Research Bootcamp",
+    "include": true
+  },
+  "bcb0f6aa-4075-4582-af73-7cbf95555b8e": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "8d004b2c-330c-43e0-9e5d-3bf14d411b38": {
+    "course": "Modern Software Engineering",
+    "include": true
+  },
+  "7e081d39-4403-45f4-84c9-9a0d1d5a5c31": {
+    "course": "Modern Software Engineering",
+    "include": true
+  },
+  "ec278f0e-cb1a-4642-8c70-ac4a411b0b3b": {
+    "course": "Modern Software Engineering",
+    "include": true
+  },
+  "e591531a-8ffe-4aef-89a4-96c9067719f5": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "1c2c6637-7a5f-4058-b4f3-15260fb4242e": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "53bedc44-268d-4271-bafc-6b07c3d0a35b": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "5053cf56-d6e3-4c58-8e34-13da8920ad69": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "011454bf-6a31-4549-82b1-c2be631482db": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "7cd0e891-6fbc-45b8-aadd-ffda675ec42c": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "69259651-2a20-4e31-871b-0fda40bc29d9": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "f2b401b8-1c69-4b23-8e8f-d2d5bc0b068a": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "25d57179-3c7f-4e6c-9066-711d5daae3ef": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "2a7e6ddd-610e-4c9c-9ed9-837cca94c668": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "99ae5062-7e5a-485c-9114-d06f319e906a": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "ddde577c-2a6e-4ccb-b6fd-3c98dd440b36": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "c698438b-21ee-471e-9a74-5812959c59c5": {
+    "course": "5D Parallelism / GPU Systems",
+    "include": true
+  },
+  "ff04f724-8cc6-4b19-8ea8-30415d8e0e2c": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "83f84f1a-af56-4872-8d1c-3cdfc9819f20": {
+    "course": "Modern Robot Learning Bootcamp",
+    "include": true
+  },
+  "18d2e2b6-c743-443a-8eaa-b79a3f17723a": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "d6286f61-ead5-46d8-97d3-2951462cdf22": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "e7c2902f-c757-4bf7-b084-4536b4ebed0c": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "58222cba-5c34-46c3-9262-e1aae3a8ac68": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "02f37710-2378-4871-852b-1dd91bca250a": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "9daaa48f-b3fb-473a-ab3b-b5610a57e0ed": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "7fd4b929-c948-410e-80c3-20866404f2fd": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "1343e6a3-348a-4d5c-817b-d5b35843110c": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "f05535b2-dc8e-40e4-8915-c4e1768c1fd3": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "3abacde6-4429-40da-9bab-7acd035d4bbd": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "1eff54a8-afc5-434a-86f0-bd64693b0833": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "db7c1aa2-3c07-4398-ae16-bea83d36af89": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "23968fdb-2d1a-413b-8098-74890b0cad74": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "aa3f492b-07f4-46b7-a2e8-ee60b779f341": {
+    "course": "Transformers for Vision / Computer Vision",
+    "include": true
+  },
+  "ebf422ba-957e-4397-a0ec-ba533d01aa68": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "cefbb73e-e92d-49fb-8dca-2a5b3ab3cbfc": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "bb930092-e517-4429-9e80-ee01f0e7a18b": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "66ff30ef-f298-4a5d-a9b3-7ca784861a01": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "4ab4a61e-1910-4f62-b0d9-fef15d22c7a0": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "4c3a8e8e-f643-4f5f-80b7-dd5c2b05d045": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "15b221c5-215b-4fe1-b30c-c0afbd20243c": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "6156abd8-52f9-4ff4-a62f-3cf900dd2359": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "779222cf-1f9d-4852-8862-f8ff74ae258e": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "a372e004-196b-440c-b36f-cf0c96e02528": {
+    "course": "ClawdBot / Autonomous Agents Workshop",
+    "include": true
+  },
+  "a145549c-39bf-4f32-b8d8-950a23462247": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "1cce4fd3-7026-4761-afe5-423e3b6bc8c8": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "7ef4a125-4e41-45f8-a3fb-5d23c153dc5b": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "cf436355-b154-402c-933e-0a5eb53d2acd": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "997e5365-7c4a-4a09-8d1e-0107d4fbbf2f": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "ed65430e-a903-4b02-9da6-c299985b555c": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "443fa555-8636-4a12-ac83-fa5f2716390b": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "18c4ac43-9607-44a7-98b0-8309b26c0cac": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "c05dff68-74e0-4129-9767-e35646a643ee": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "e5afe61c-c4eb-4b8f-adb1-30730a6cba16": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "8259b545-bdc3-42ba-b6b7-e928bbab5aa6": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "2273f1ca-3ff5-4159-99b6-054551a7f379": {
+    "course": "Production-grade RAG Pipeline",
+    "include": true
+  },
+  "e301525b-2514-4e37-9c60-e20dc2dd55e0": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "ff5466ba-ab5d-45d3-81e4-e867309f4727": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "2e16fe31-2b4c-4b30-8adf-95f7eca8a437": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "5b7aef3f-9c0f-45b3-88ff-cfe332b8ed23": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "c0dcf7a5-5997-4d38-af7c-6d98a668b10a": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "03cd6d74-a29a-4709-ac41-d7ea81d923d7": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "61fb1757-af2c-40fb-9886-1b59828b782f": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "1e5d9d9a-f017-4606-8451-5868d29580fc": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "1f546f5d-84b1-46af-86c5-2e9b13277b8a": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "631dd46e-6542-4a95-812c-4435d7fa6706": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "7a4f4d42-6c39-4c18-8e00-232c01c31183": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "220692e2-642f-45b4-8fc3-862cae58096f": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "a5eea6a4-ca03-4f2b-a572-521310ed33a7": {
+    "course": "AI Agents Bootcamp",
+    "include": true
+  },
+  "28cc14f6-431d-4e02-b62e-1e5214e2a6d8": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "4d3abdab-33f9-4d34-9eba-ce8ab95399da": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "56ed7254-2501-4b6b-be40-3768822bbf9e": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "330155f8-698d-40f6-9404-8050721bbf8a": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "41f724ec-f212-4429-967c-cf3943d0405c": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "7e5a9b8d-dd8b-4a2d-8632-9f470865efa7": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "c1b3d8d9-6f0b-42b3-b268-bee0ba58bb45": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "4a3d0b73-a618-4667-89b6-7e1fbd0cc723": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "8c3f9443-7d55-4138-9cfd-866a848c4e0a": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "fbc31f4c-4dad-4db7-b27c-85cad4eac127": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "2abf3a60-d162-4ee1-aa96-2c4164e6603e": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "5f4b30b3-d0ab-496e-ae72-a517f4ad0819": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "a25059f4-d056-4a00-96a9-cacbaa3a86cc": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "1aeafaef-e79d-4f2d-acf7-c8b24547593c": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "20e76851-0b7b-42f0-b07b-96995d585c3a": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "0246b0bb-11bb-4522-b475-0f766e762e87": {
+    "course": "Generative AI Fundamentals / Foundation of AI Models",
+    "include": true
+  },
+  "cad3da94-824c-4a22-b3a6-9f6470c25aaa": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "fd0ce9c0-4361-4577-ba34-500588dcff77": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "6fc17443-bbe8-463d-aecc-cc0fb21e4180": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "77a3a5b9-260b-4240-b86a-374662eba5a7": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "f59c708e-6cdc-4436-a2d2-e9f8763b0a3c": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "0aa6ff69-4fce-4097-b1e1-7f8fff045b11": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "04083728-9f03-435e-9cb8-1007fc7cf4cb": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "1403c579-0233-4913-bd56-46a5e36a1aa5": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "d5cc7d43-102d-44e8-b5f5-d70557199bc0": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "62010d73-2b6b-4dba-b734-648efa19ae6a": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "96e4aa0e-efd1-4408-9c1b-0069ce145b79": {
+    "course": "ML & DL Mastery",
+    "include": true
+  },
+  "32392a0f-d635-4d1b-a82c-12822fe07158": {
+    "course": "ML & DL Mastery",
+    "include": true
+  }
+}
